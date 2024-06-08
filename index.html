@@ -1,5 +1,133 @@
 <!DOCTYPE html>
 <html>
-<body Coming Soon /body>
+<head>
+<title>Wildfire Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: Lucida Handwriting, cursive;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("wildfiremusical.github.io/home.png");
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Menu at the top -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-win8-olive">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-win8-olive">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#story" class="w3-button w3-block w3-win8-olive">STORY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#team" class="w3-button w3-block w3-win8-olive">THE TEAM</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#symbolism" class="w3-button w3-block w3-win8-olive">SYMBOLISM</a>
+    </div>
+  </div>
+</div>
+
+<!-- Image -->
+<header class="bgimg w3-display-container" id="home">
+  <!--
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black w3-tag w3-win8-taupe w3-round-large" style="font-size:60px">Wildfire</span>
+  </div>
+-->
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="story">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About the Story</span></h5>
+    <p>The plot is centred around a girl called Nina who has been emotionally stifled since she was a child.
+      Throughout the show, we explore Nina’s family dynamic, old friendships and both past and new romances that have shaped her, and follow her on a journey of self discovery as she works through her emotional trauma.</p>
+    <!-- 
+      <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+    -->
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="team">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Production Team</span></h5>
+    <p>Coming Soon... </p>
+  </div>
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Cast</span></h5>
+    <p>Coming Soon... </p>
+  </div>
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Band</span></h5>
+    <p>Coming Soon... </p>
+  </div>
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Crew</span></h5>
+    <p>Coming Soon... </p>
+  </div>
+</div>
+
+<div class="w3-container" id="symbolism">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Symbolism of the Show</span></h5>
+    <p>Coming Soon... </p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer 
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+-->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
 </html>
+
 
